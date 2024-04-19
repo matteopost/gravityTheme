@@ -162,26 +162,7 @@
 					</header>
 				</a>
 			</div>
-			
-			<div class="">
-				<a href="<?php the_permalink(); ?>" class="block">
-					<div class="pb-2 img-container">
-						<?php the_post_thumbnail('thumbnail'); ?>
-					</div>
 
-					<header class="">
-						<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
-
-						<?php
-						if ( is_sticky() && is_home() && ! is_paged() ) {
-							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
-						}
-						the_title( '<h2 class="text-black text-xl">', '</h2>' );
-						?>
-					</header>
-				</a>
-			</div>
-			
 			<div class="">
 				<a href="<?php the_permalink(); ?>" class="block">
 					<div class="pb-2 img-container">
@@ -201,7 +182,24 @@
 				</a>
 			</div>
 
-			
+			<div class="">
+				<a href="<?php the_permalink(); ?>" class="block">
+					<div class="pb-2 img-container">
+						<?php the_post_thumbnail('thumbnail'); ?>
+					</div>
+
+					<header class="">
+						<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
+
+						<?php
+						if ( is_sticky() && is_home() && ! is_paged() ) {
+							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
+						}
+						the_title( '<h2 class="text-black text-xl">', '</h2>' );
+						?>
+					</header>
+				</a>
+			</div>
 		</div>
 	</div>
 	
