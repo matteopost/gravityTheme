@@ -16,31 +16,31 @@ get_header();
 
 	<section id="primary">
 		<main id="main">
-			<div <?php gravity_content_class( 'entry-content' ); ?>
-				<?php
-				the_content(
-					sprintf(
-						wp_kses(
-							/* translators: %s: Name of current post. Only visible to screen readers. */
-							__( 'Continue reading<span class="sr-only"> "%s"</span>', 'gravity' ),
-							array(
-								'span' => array(
-									'class' => array(),
-								),
-							)
-						),
-						get_the_title()
-					)
-				);
+			
+			<?php
+			the_content(
+				sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers. */
+						__( 'Continue reading<span class="sr-only"> "%s"</span>', 'gravity' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					get_the_title()
+				)
+			);
 
-				wp_link_pages(
-					array(
-						'before' => '<div>' . __( 'Pages:', 'gravity' ),
-						'after'  => '</div>',
-					)
-				);
-				?>
-			</div>
+			wp_link_pages(
+				array(
+					'before' => '<div>' . __( 'Pages:', 'gravity' ),
+					'after'  => '</div>',
+				)
+			);
+			?>
+			
 
 
 		</main><!-- #main -->
