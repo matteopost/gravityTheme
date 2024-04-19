@@ -40,8 +40,6 @@ get_header();
 				)
 			);
 			?>
-			
-
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

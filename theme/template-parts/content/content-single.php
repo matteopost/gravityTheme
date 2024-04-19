@@ -17,7 +17,7 @@
 
 		<!-- <p class="text-red-500"><?php the_category(', '); ?></p> -->
 
-		<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 text-sm py-5">
+		<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-6 text-sm py-5">
 			<div class="">
 				<?php if (get_field('tema')) : ?>
 					<div class="pb-4">
@@ -107,14 +107,14 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="p-5 w-full img-container">
+	<div class="px-5 w-full img-container">
 		<?php the_post_thumbnail('large'); ?>
 	</div>
 	
 
 	
 
-	<div <?php gravity_content_class( 'entry-content' ); ?>
+	<div>
 		<?php
 		the_content(
 			sprintf(
@@ -141,9 +141,9 @@
 	</div>
 
 
-	<div class="border-t border-black mt-4">
+	<div class="">
 		<p class="uppercase text-base p-5">Leggi anche</p>
-		<div class="grid grid-cols-3 px-5 pb-5 gap-6">
+		<div class="grid grid-cols-3 px-5 pb-5 gap-x-6">
 			<div class="">
 				<div class="pb-2 img-container ">
 					<?php the_post_thumbnail('thumbnail'); ?>

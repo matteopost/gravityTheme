@@ -58,12 +58,17 @@ h2{
 	@apply text-black;
 }
 
-.wp-block-columns{
-	@apply px-5 ;
+.wp-container-core-columns-is-layout-1{
+	@apply p-5 border-b border-black;
 }
 
+:where(.wp-block-columns) {
+    @apply mb-0;
+}
+
+
 .wp-block-heading{
-	@apply p-5 border-b border-black font-medium text-4xl;
+	@apply px-5 py-8 border-b border-black font-medium text-4xl;
 }
 
 .entry-content > .alignwide {
