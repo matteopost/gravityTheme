@@ -11,31 +11,31 @@
 
 <footer id="colophon">
 
-	<div class="grid grid-cols-12 p-5 border-t border-black gap-6 mb-12">
-		<div class="col-span-3">
+	<div class="grid grid-cols-2 md:grid-cols-12 p-5 border-t border-black gap-6 mb-12">
+		<div class="md:col-span-3">
 			<p class="uppercase text-xl ">gravity</p>
 			<p class="text-xl ">Lab con i piedi per terra</p>
 		</div>
 
-		<div class="col-span-2">
+		<div class="md:col-span-2">
 			<!-- <img src="../../assets/logo-politecnico.svg" alt="logo politecnico" class=""> -->
 			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/logo-politecnico.svg">
 		</div>
 
-		<div class="col-span-3">
+		<div class="md:col-span-3">
 			<p class="text-sm ">DAStU - Politecnico di Milano </p>
 			<p class="text-sm ">Via Bonardi, 3 - 20133 Milano</p>
 			<p class="text-sm ">Tel. +39 02.2399.5496</p>
 			<p class="text-sm ">P.IVA 04376620151 - C.F 8005793150</p>
 		</div>
 
-		<div class="col-span-2 grid">
-			<div><a href="#" class="text-sm  hover:underline">Privacy Policy</a></div>
-			<div><a href="#" class="text-sm  hover:underline">Cookie Policy</a></div>
-			<div><a href="#" class="text-sm  hover:underline">Crediti</a></div>
+		<div class="md:col-span-2 grid">
+			<div class=""><a href="#" class="text-sm  hover:underline">Privacy Policy</a></div>
+			<div class=""><a href="#" class="text-sm  hover:underline">Cookie Policy</a></div>
+			<div class=""><a href="#" class="text-sm  hover:underline">Crediti</a></div>
 		</div>
 
-		<div class="col-span-2">
+		<div class="md:col-span-2">
 			<p class="text-sm  uppercase">Seguici</p>
 			<div class="grid lg:grid-cols-2 grid-flow-col-1">
 				<div><a href="#" class="text-sm  hover:underline">Facebook</a></div>
