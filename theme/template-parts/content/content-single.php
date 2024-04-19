@@ -140,7 +140,6 @@
 		?>
 	</div>
 
-
 	<div class="">
 		<p class="uppercase text-base p-5">Leggi anche</p>
 		<div class="grid grid-cols-3 px-5 pb-5 gap-x-6">
