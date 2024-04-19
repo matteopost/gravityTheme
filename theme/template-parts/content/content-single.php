@@ -145,58 +145,62 @@
 		<p class="uppercase text-base p-5">Leggi anche</p>
 		<div class="grid grid-cols-3 px-5 pb-5 gap-x-6">
 			<div class="">
-				<div class="pb-2 img-container ">
-					<?php the_post_thumbnail('thumbnail'); ?>
-				</div>
+				<a href="<?php the_permalink(); ?>" class="block">
+					<div class="pb-2 img-container">
+						<?php the_post_thumbnail('thumbnail'); ?>
+					</div>
 
-				<header class="">
+					<header class="">
+						<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
 
-					<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
-
-					<?php
-					if ( is_sticky() && is_home() && ! is_paged() ) {
-						printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
-					}
-					the_title( sprintf( '<h2 class="text-black text-xl"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-					?>
-				</header>
+						<?php
+						if ( is_sticky() && is_home() && ! is_paged() ) {
+							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
+						}
+						the_title( '<h2 class="text-black text-xl">', '</h2>' );
+						?>
+					</header>
+				</a>
 			</div>
-
+			
 			<div class="">
-				<div class="pb-2 img-container ">
-					<?php the_post_thumbnail('thumbnail'); ?>
-				</div>
+				<a href="<?php the_permalink(); ?>" class="block">
+					<div class="pb-2 img-container">
+						<?php the_post_thumbnail('thumbnail'); ?>
+					</div>
 
-				<header class="">
+					<header class="">
+						<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
 
-					<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
-
-					<?php
-					if ( is_sticky() && is_home() && ! is_paged() ) {
-						printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
-					}
-					the_title( sprintf( '<h2 class="text-black text-xl"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-					?>
-				</header>
+						<?php
+						if ( is_sticky() && is_home() && ! is_paged() ) {
+							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
+						}
+						the_title( '<h2 class="text-black text-xl">', '</h2>' );
+						?>
+					</header>
+				</a>
 			</div>
-
+			
 			<div class="">
-				<div class="pb-2 img-container ">
-					<?php the_post_thumbnail('thumbnail'); ?>
-				</div>
+				<a href="<?php the_permalink(); ?>" class="block">
+					<div class="pb-2 img-container">
+						<?php the_post_thumbnail('thumbnail'); ?>
+					</div>
 
-				<header class="">
+					<header class="">
+						<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
 
-					<p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
-
-					<?php
-					if ( is_sticky() && is_home() && ! is_paged() ) {
-						printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
-					}
-					the_title( sprintf( '<h2 class="text-black text-xl"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-					?>
-				</header>
+						<?php
+						if ( is_sticky() && is_home() && ! is_paged() ) {
+							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
+						}
+						the_title( '<h2 class="text-black text-xl">', '</h2>' );
+						?>
+					</header>
+				</a>
 			</div>
+
 			
 		</div>
 	</div>
