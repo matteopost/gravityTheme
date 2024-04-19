@@ -7,22 +7,33 @@ module.exports = {
 	// 	'rosso': '#FFF1F2',
 	// }
 
+
 	presets: [
 		// Manage Tailwind Typography's configuration in a separate file.
 		require('./tailwind-typography.config.js'),
 	],
+
 	content: [
 		// Ensure changes to PHP files and `theme.json` trigger a rebuild.
 		'./theme/**/*.php',
 	],
+
 	theme: {
+
 		// Extend the default Tailwind theme.
-		extend: {},
+		extend: {
+			fontFamily: {
+				// 'sans': ['ui-sans-serif', 'Suisse'],
+				'suisse': ['Suisse', 'sans-serif'],
+			},
+		},
 	},
+
 	corePlugins: {
 		// Disable Preflight base styles in builds targeting the editor.
 		preflight: includePreflight,
 	},
+
 	plugins: [
 		// Add Tailwind Typography (via _tw fork).
 		require('@_tw/typography'),

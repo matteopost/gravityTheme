@@ -83,5 +83,5 @@ h2{
 }
 
 .img-container img {
-	@apply w-full aspect-video object-cover
+	@apply w-full aspect-video object-cover;
 }

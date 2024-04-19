@@ -15,9 +15,6 @@ const hexToRgb = (hex) => {
 
 module.exports = {
 	theme: {
-		fontFamily: {
-			'sans': ['Suisse'],
-		},
 
 		extend: {
 

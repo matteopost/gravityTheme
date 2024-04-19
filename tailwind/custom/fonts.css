@@ -5,7 +5,7 @@
  */
 
 @font-face {
-    font-family: "Suisse";
+    font-family: 'Suisse';
     font-display: swap;
-    src: "/font/SuisseIntl-Regular-WebXL.woff2";
+    src: url('../../theme/font/SuisseIntl-Regular-WebXL.woff2');
 }
