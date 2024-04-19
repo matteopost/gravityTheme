@@ -1,0 +1,10 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+
+@font-face {
+    font-family: "Suisse";
+    src: "../../font/SuisseIntl-Regular-WebXL.woff2";
+}
