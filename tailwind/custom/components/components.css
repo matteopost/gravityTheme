@@ -129,3 +129,11 @@ h5{
 .image-w-full img{
 	@apply w-full aspect-video object-cover pt-5 px-5;
 }
+
+.chi-siamo-33-columns{
+	@apply border-b border-black;
+}
+
+.collaboratori-lista{
+	@apply pt-0 px-0;
+}
