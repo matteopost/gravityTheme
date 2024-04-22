@@ -169,80 +169,178 @@
 			<?php endif; ?>
 		</div> -->
 
-		<div class="grid grid-rows-3 grid-flow-col auto-cols-fr gap-x-6 text-sm py-5">
-			<?php if (get_field('tema')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Tema</p>
-					<p class="text-sm"><?php the_field('tema'); ?></p>
+		<!-- <div class="flex spacd-x-6 py-5">
+			<div class="w-1/4">
+				<?php if (get_field('tema')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Tema</p>
+						<p class="text-sm"><?php the_field('tema'); ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php if (get_field('tipologia')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Tipologia</p>
+						<p class="text-sm"><?php the_field('tipologia'); ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php if (get_field('anno')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Anno</p>
+						<p class="text-sm"><?php the_field('anno'); ?></p>
+					</div>
+				<?php endif; ?>
+			</div>
+
+			<div class="w-1/4">
+				<?php if (get_field('area_geografica')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Area geografica</p>
+						<p class="text-sm"><?php the_field('area_geografica'); ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php if (get_field('promotore')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Promotore</p>
+						<p class="text-sm"><?php the_field('promotore'); ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php if (get_field('finanziato_da')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Finanziato da</p>
+						<p class="text-sm"><?php the_field('finanziato_da'); ?></p>
+					</div>
+				<?php endif; ?>
+			</div>
+
+			<div class="w-1/4">
+				<?php if (get_field('ambito')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Ambito</p>
+						<p class="text-sm"><?php the_field('ambito'); ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php if (get_field('partner_di_progetto')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Partner di Progetto</p>
+						<p class="text-sm"><?php the_field('partner_di_progetto'); ?></p>
+					</div>
+				<?php endif; ?>
+			</div>
+
+			<div class="w-1/4">
+				<?php if (get_field('referente_del_gruppo')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Referente del Gruppo</p>
+						<p class="text-sm"><?php the_field('referente_del_gruppo'); ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php if (get_field('link')) : ?>
+					<div class="pb-4">
+						<p class="text-sm uppercase">Link</p>
+						<p class="text-sm"><?php the_field('link'); ?></p>
+					</div>
+				<?php endif; ?>
+			</div>
+		</div> -->
+
+		<div class="flex space-x-6 py-5">
+			<?php if (get_field('tema') || get_field('tipologia') || get_field('anno')) : ?>
+				<div class="w-1/4">
+					<?php if (get_field('tema')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Tema</p>
+							<p class="text-sm"><?php the_field('tema'); ?></p>
+						</div>
+					<?php endif; ?>
+
+					<?php if (get_field('tipologia')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Tipologia</p>
+							<p class="text-sm"><?php the_field('tipologia'); ?></p>
+						</div>
+					<?php endif; ?>
+
+					<?php if (get_field('anno')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Anno</p>
+							<p class="text-sm"><?php the_field('anno'); ?></p>
+						</div>
+					<?php endif; ?>
 				</div>
 			<?php endif; ?>
 
-			<?php if (get_field('tipologia')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Tipologia</p>
-					<p class="text-sm"><?php the_field('tipologia'); ?></p>
+			<?php if (get_field('area_geografica') || get_field('promotore') || get_field('finanziato_da')) : ?>
+				<div class="w-1/4">
+					<?php if (get_field('area_geografica')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Area geografica</p>
+							<p class="text-sm"><?php the_field('area_geografica'); ?></p>
+						</div>
+					<?php endif; ?>
+
+					<?php if (get_field('promotore')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Promotore</p>
+							<p class="text-sm"><?php the_field('promotore'); ?></p>
+						</div>
+					<?php endif; ?>
+
+					<?php if (get_field('finanziato_da')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Finanziato da</p>
+							<p class="text-sm"><?php the_field('finanziato_da'); ?></p>
+						</div>
+					<?php endif; ?>
 				</div>
 			<?php endif; ?>
 
-			<?php if (get_field('anno')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Anno</p>
-					<p class="text-sm"><?php the_field('anno'); ?></p>
+			
+
+			<?php if (get_field('ambito') || get_field('partner_di_progetto')): ?>
+				<div class="w-1/4">
+					<?php if (get_field('ambito')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Ambito</p>
+							<p class="text-sm"><?php the_field('ambito'); ?></p>
+						</div>
+					<?php endif; ?>
+
+					<?php if (get_field('partner_di_progetto')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Partner di Progetto</p>
+							<p class="text-sm"><?php the_field('partner_di_progetto'); ?></p>
+						</div>
+					<?php endif; ?>
 				</div>
 			<?php endif; ?>
 
-			<?php if (get_field('area_geografica')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Area geografica</p>
-					<p class="text-sm"><?php the_field('area_geografica'); ?></p>
-				</div>
-			<?php endif; ?>
 
-			<?php if (get_field('promotore')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Promotore</p>
-					<p class="text-sm"><?php the_field('promotore'); ?></p>
-				</div>
-			<?php endif; ?>
+			<?php if (get_field('referente_del_gruppo') || get_field('link')): ?>
+				<div class="w-1/4">
+					<?php if (get_field('referente_del_gruppo')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Referente del Gruppo</p>
+							<p class="text-sm"><?php the_field('referente_del_gruppo'); ?></p>
+						</div>
+					<?php endif; ?>
 
-			<?php if (get_field('finanziato_da')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Finanziato da</p>
-					<p class="text-sm"><?php the_field('finanziato_da'); ?></p>
-				</div>
-			<?php endif; ?>
-
-			<?php if (get_field('ambito')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Ambito</p>
-					<p class="text-sm"><?php the_field('ambito'); ?></p>
-				</div>
-			<?php endif; ?>
-
-			<?php if (get_field('partner_di_progetto')) : ?>
-				<div class="pb-4 row-span-3">
-					<p class="text-sm uppercase">Partner di Progetto</p>
-					<p class="text-sm"><?php the_field('partner_di_progetto'); ?></p>
-				</div>
-			<?php endif; ?>
-
-			<?php if (get_field('referente_del_gruppo')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Referente del Gruppo</p>
-					<p class="text-sm"><?php the_field('referente_del_gruppo'); ?></p>
-				</div>
-			<?php endif; ?>
-
-			<?php if (get_field('link')) : ?>
-				<div class="pb-4">
-					<p class="text-sm uppercase">Link</p>
-					<p class="text-sm"><?php the_field('link'); ?></p>
+					<?php if (get_field('link')) : ?>
+						<div class="pb-4">
+							<p class="text-sm uppercase">Link</p>
+							<p class="text-sm"><?php the_field('link'); ?></p>
+						</div>
+					<?php endif; ?>
 				</div>
 			<?php endif; ?>
 		</div>
 
-
-
+			
 		<!-- <?php if ( ! is_page() ) : ?>
 			<div class="entry-meta">
 				<?php gravity_entry_meta(); ?>
