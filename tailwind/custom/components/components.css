@@ -40,13 +40,19 @@ p{
 }
 
 h2{
-	@apply text-9xl px-5 py-8 border-b border-black font-medium;
+	@apply text-2xl;
 }
+
 
 h3{
 	@apply text-3xl;
 }
 
+h4{
+	@apply text-4xl px-5 py-8 border-b border-black font-medium;
+}
+
+/* Downloads */
 h5{
 	@apply text-sm py-5 mt-5 uppercase border-t border-black;
 }
@@ -105,11 +111,11 @@ h5{
 }
 
 .wp-block-file{
-	@apply pb-5;
+	@apply pb-5 mb-0;
 }
 
 .wp-block-file a {
-	@apply underline;
+	@apply underline text-xl;
 }
 
 .wp-block-file a::after {

@@ -18,12 +18,12 @@
         </div>
 
         <header class="">
-            <p class="text-black text-xs uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
+            <p class="text-black text-sm uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
             <?php
             if ( is_sticky() && is_home() && ! is_paged() ) {
                 printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
             }
-            the_title( '<h2 class="text-black text-xl">', '</h2>' );
+            the_title( '<h3 class="text-black">', '</h3>' );
             ?>
         </header><!-- .entry-header -->
 		<!-- 
