@@ -3,29 +3,9 @@
     "title": "Block:Testimonial",
     "fields": [
         {
-            "key": "field_66265de35869c",
-            "label": "Quote",
-            "name": "quote",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_66265e275869d",
-            "label": "Author",
-            "name": "author",
+            "label": "Nome Cognome",
+            "name": "nome_cognome",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -44,8 +24,8 @@
         },
         {
             "key": "field_66265e345869e",
-            "label": "Role",
-            "name": "role",
+            "label": "Posizione",
+            "name": "posizione",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -88,45 +68,9 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_66265e4d586a0",
-            "label": "Color Settings",
-            "name": "",
-            "aria-label": "",
-            "type": "accordion",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 0
-        },
-        {
-            "key": "field_66265e70586a1",
-            "label": "Background Color",
-            "name": "background_color",
-            "aria-label": "",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "enable_opacity": 0,
-            "return_format": "string"
-        },
-        {
-            "key": "field_66265e89586a2",
-            "label": "Text Color",
-            "name": "text_color",
+            "key": "field_662668fe90757",
+            "label": "Biografia",
+            "name": "biografia",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -139,6 +83,25 @@
             },
             "default_value": "",
             "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6626690990758",
+            "label": "Email",
+            "name": "email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -162,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713791605
+    "modified": 1713793299
 }
