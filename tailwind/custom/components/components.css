@@ -35,8 +35,20 @@ li {
 	@apply text-black;
 }
 
+p{
+	@apply text-xl
+}
+
 h2{
-	@apply text-9xl;
+	@apply text-9xl px-5 py-8 border-b border-black font-medium;
+}
+
+h3{
+	@apply text-3xl;
+}
+
+h5{
+	@apply text-sm py-5 mt-5 uppercase border-t border-black;
 }
 
 
@@ -58,18 +70,19 @@ h2{
 	@apply text-black;
 }
 
-.wp-container-core-columns-is-layout-1{
-	@apply p-5 border-b border-black;
+.is-layout-flex{
+	@apply pt-5 px-5;
 }
+
 
 :where(.wp-block-columns) {
     @apply mb-0;
 }
 
-
-.wp-block-heading{
-	@apply px-5 py-8 border-b border-black font-medium text-4xl;
+:where(.wp-block-columns.is-layout-flex) {
+	@apply gap-5;
 }
+
 
 .entry-content > .alignwide {
 	@apply max-w-wide;
@@ -89,4 +102,24 @@ h2{
 
 .img-container img {
 	@apply w-full aspect-video object-cover;
+}
+
+.wp-block-file{
+	@apply pb-5;
+}
+
+.wp-block-file a {
+	@apply underline;
+}
+
+.wp-block-file a::after {
+    content: '\2193';
+}
+
+.size-full img{
+	@apply w-full aspect-video object-cover;
+}
+
+.image-w-full img{
+	@apply w-full aspect-video object-cover pt-5 px-5;
 }

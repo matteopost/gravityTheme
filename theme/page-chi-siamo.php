@@ -16,7 +16,6 @@ get_header();
 
 	<section id="primary">
 		<main id="main">
-			
 			<?php
 			the_content(
 				sprintf(
