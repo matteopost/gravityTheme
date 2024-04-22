@@ -134,6 +134,10 @@ h5{
 	@apply border-b border-black;
 }
 
-.collaboratori-lista{
+.collaboratori-lista.is-layout-flex {
 	@apply pt-0 px-0;
+}
+
+.collaboratori-titolo.is-layout-flex {
+	@apply mt-5 border-t border-black;
 }

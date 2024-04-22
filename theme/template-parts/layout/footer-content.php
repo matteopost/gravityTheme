@@ -11,7 +11,7 @@
 
 <footer id="colophon">
 
-	<div class="grid grid-cols-2 md:grid-cols-12 p-5 border-t border-black gap-6 mb-12">
+	<div class="grid grid-cols-2 md:grid-cols-12 p-5 border-t border-black gap-6 my-5">
 		<div class="md:col-span-3">
 			<p class="uppercase text-xl ">gravity</p>
 			<p class="text-xl ">Lab con i piedi per terra</p>
