@@ -11,7 +11,7 @@
 
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('group'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('group ' . get_field('tema')); ?> >
     <a href="<?php the_permalink(); ?>" class="block">
         <div class="pb-2 img-container">
             <?php the_post_thumbnail('medium'); ?>

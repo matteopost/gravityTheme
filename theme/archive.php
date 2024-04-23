@@ -34,9 +34,9 @@ get_header();
 				<div x-show="open" class="grid grid-cols-6 py-5 gap-5">
 					<div class="space-y-2">
 						<p class="text-base uppercase">Tema</p>
-						<button class="block">Suolo</button>
-						<button class="block">SLOW</button>
-						<button class="block">Spazi</button>
+						<button type="button" class="block" data-filter=".Suolo">Suolo</button>
+						<button type="button" class="block" data-filter=".Slow">SLOW</button>
+						<button type="button" class="block" data-filter=".Spazi">Spazi</button>
 					</div>
 
 					<div class="space-y-2">
