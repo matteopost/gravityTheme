@@ -19,6 +19,7 @@
 
 <?php wp_footer(); ?>
 
+	<script src="/path/to/mixitup.min.js"></script>
 </body>
 </html>
 
