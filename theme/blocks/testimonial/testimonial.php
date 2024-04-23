@@ -14,8 +14,10 @@ $email              = get_field( 'email' );
 
 ?>
 
-<div x-data="{open : false}" class="mb-5">
-    <div @click="open = !open">
+<?php $alpine_data = (!$is_preview) ? 'x-data="{open: false}"' : ''; ?>
+
+<div <?= $alpine_data; ?> class="mb-5">
+    <div @click="open = !open" class="">
         <?php if ( !empty( $nome_cognome ) ) : ?>
             <h3 class="pb-4">
                 <?php echo esc_html( $nome_cognome ); ?>
@@ -35,8 +37,6 @@ $email              = get_field( 'email' );
         <?php endif; ?>
     </div>
 
-    <button @click="open = !open" >More</button>
-
     <div x-show="open">
         <?php if ( !empty( $biografia ) ) : ?>
             <p class="text-sm pt-2">
@@ -45,9 +45,10 @@ $email              = get_field( 'email' );
         <?php endif; ?>
 
         <?php if ( !empty( $email ) ) : ?>
-            <a href="mailto:<?php echo wp_kses_post( $email )?>" class="text-sm pt-2 hover:text-red-500">
+            <a href="mailto:<?php echo wp_kses_post( $email )?>" class="text-sm pt-4 hover:text-red-500">
                 <?php echo wp_kses_post( $email ); ?>
             </a>
         <?php endif; ?>
     </div>
 </div>
+

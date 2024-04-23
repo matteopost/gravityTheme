@@ -151,25 +151,20 @@
 
 	<div class="border-t border-black mt-5">
 		<p class="uppercase text-base p-5">Leggi anche</p>
-		<div class="grid grid-cols-3 px-5 pb-5 gap-x-6">
-			<div class="">
-				<a href="<?php the_permalink(); ?>" class="block">
-					<div class="pb-2 img-container">
-						<?php the_post_thumbnail('medium'); ?>
-					</div>
 
-					<header class="">
-						<p class="text-black text-sm uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
 
-						<?php
-						if ( is_sticky() && is_home() && ! is_paged() ) {
-							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
-						}
-						the_title( '<h3 class="text-black">', '</h3>' );
-						?>
-					</header>
-				</a>
-			</div>
+		<div class="grid grid-cols-3 gap-5 px-5">
+			<?php 
+
+			$the_query = new WP_Query( array(
+				'posts_per_page' => 3,
+				'post__not_in' => array( get_the_ID() )
+			)); 
+			?>
+
+
+			<?php if ( $the_query->have_posts() ) : ?>
+			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 			<div class="">
 				<a href="<?php the_permalink(); ?>" class="block">
@@ -177,41 +172,27 @@
 						<?php the_post_thumbnail('medium'); ?>
 					</div>
 
-					<header class="">
-						<p class="text-black text-sm uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
+					<p class="text-black text-sm uppercase">
+						<?php single_term_title(); ?> / <?php the_field('tema') ?>
+					</p>
 
-						<?php
-						if ( is_sticky() && is_home() && ! is_paged() ) {
-							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
-						}
-						the_title( '<h3 class="text-black">', '</h3>' );
-						?>
-					</header>
+					<h3>
+						<?php the_title(); ?>
+					</h3>
 				</a>
 			</div>
 
-			<div class="">
-				<a href="<?php the_permalink(); ?>" class="block">
-					<div class="pb-2 img-container">
-						<?php the_post_thumbnail('medium'); ?>
-					</div>
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
 
-					<header class="">
-						<p class="text-black text-sm uppercase"><?php single_term_title(); ?> / <?php the_field('tema') ?></p>
-
-						<?php
-						if ( is_sticky() && is_home() && ! is_paged() ) {
-							printf( '%s', esc_html_x( 'Featured', 'post', 'gravity' ) );
-						}
-						the_title( '<h3 class="text-black">', '</h3>' );
-						?>
-					</header>
-				</a>
-			</div>
+			<?php else : ?>
+				<p><?php __('No News'); ?></p>
+			<?php endif; ?>
 		</div>
 	</div>
+
+
 	
-	<!-- .entry-content -->
 
 	<!-- <footer class="entry-footer">
 		<?php gravity_entry_footer(); ?>

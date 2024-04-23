@@ -25,7 +25,7 @@ get_header();
 				// Start the Loop.
 				while ( have_posts() ) :?>
 				<div>
-				<?php	 the_post(); get_template_part( 'template-parts/content/content', 'excerpt' );  // End the loop. ?>
+				<?php the_post(); get_template_part( 'template-parts/content/content', 'excerpt' );  // End the loop. ?>
 			</div>
 				
 				<?php endwhile;

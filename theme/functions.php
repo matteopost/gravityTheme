@@ -229,3 +229,4 @@ function gravity_register_acf_blocks() {
 }
 // Here we call our tt3child_register_acf_block() function on init.
 add_action( 'init', 'gravity_register_acf_blocks' );
+
