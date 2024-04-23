@@ -190,8 +190,6 @@
 			<?php endif; ?>
 		</div>
 	</div>
-
-
 	
 
 	<!-- <footer class="entry-footer">
