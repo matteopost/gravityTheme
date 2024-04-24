@@ -41,14 +41,14 @@ get_header();
 
 					<div class="space-y-2">
 						<p class="text-base uppercase">Tipologia</p>
-						<button class="block">Progetto</button>
-						<button class="block">Ricerca</button>
+						<button type="button" class="block" data-filter=".Progetto">Progetto</button>
+						<button type="button" class="block" data-filter=".Ricerca">Ricerca</button>
 					</div>
 
 					<div class="space-y-2">
 						<p class="text-base uppercase">Stato</p>
-						<button class="block">In corso</button>
-						<button class="block">Concluso</button>
+						<button type="button" class="block" data-filter=".In_corso">In corso</button>
+						<button type="button" class="block" data-filter=".Concluso">Concluso</button>
 					</div>
 				</div>
 			</div>

@@ -19,17 +19,7 @@
 
 <?php wp_footer(); ?>
 
-	<script src="../../mixitup.min.js"></script>
-	<!-- <script>
-		var mixer = mixitup(containerEl, {
-			selectors: {
-				target: '.group'
-			},
-			animation: {
-				duration: 300
-			}
-		});
-	</script> -->
+
 </body>
 </html>
 

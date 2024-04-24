@@ -17,6 +17,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<script src="//unpkg.com/alpinejs" defer></script>
+	<!-- <script src="../../mixitup.min.js"></script> -->
+	<script>
+		var mixer = mixitup(containerEl, {
+			selectors: {
+				target: '.group'
+			},
+			animation: {
+				duration: 300
+			}
+		});
+	</script>
 	<?php wp_head(); ?>
 </head>
 
