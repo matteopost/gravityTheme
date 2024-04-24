@@ -56,20 +56,20 @@ get_header();
 			<!-- Post -->
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5" id='filtro'>
 				<?php while ( have_posts() ) :?>
-				<div>
+
 				<?php the_post(); get_template_part( 'template-parts/content/content', 'excerpt' );  // End the loop. ?>
-			</div>
 				
 				<?php endwhile;
 			
 				gravity_the_posts_navigation();
-
-			else :
-
-				get_template_part( 'template-parts/content/content', 'none' );
-
-			endif;
-			?>
+				
+				else :
+					
+					get_template_part( 'template-parts/content/content', 'none' );
+					
+				endif;
+				?>
+			</div>
 		
 		</main><!-- #main -->
 	</section><!-- #primary -->
