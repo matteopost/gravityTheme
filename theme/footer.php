@@ -29,7 +29,8 @@
 			toggleLogic: "and"
 		},
 		animation: {
-			duration: 100,
+			duration: 200,
+			easing: 'cubic-bezier(1, 0, 0, 1)',
 			nudge: true,
 			reverseOut: true,
 			effects: "fade"
