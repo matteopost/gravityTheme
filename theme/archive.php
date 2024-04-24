@@ -31,12 +31,12 @@ get_header();
 				</div>
 
 
-				<div x-show="open" class="grid grid-cols-6 py-5 gap-5 block-filter" id='mix-it-up'>
+				<div x-show="open" class="grid grid-cols-6 py-5 gap-5 block-filter">
 					<div class="space-y-2">
 						<p class="text-base uppercase">Tema</p>
-						<button type="button" class="block" data-filter=".Suolo">Suolo</button>
-						<button type="button" class="block" data-filter=".Slow">SLOW</button>
-						<button type="button" class="block" data-filter=".Spazi">Spazi</button>
+						<button type="button" class="block" data-toggle=".Suolo" x-data="{ isActive: false }" :class="{ 'text-red-500': isActive }" @click="isActive = !isActive">Suolo</button> 
+						<button type="button" class="block" data-toggle=".Slow">SLOW</button>
+						<button type="button" class="block" data-toggle=".Spazi">Spazi</button>
 					</div>
 
 					<div class="space-y-2">
@@ -54,26 +54,22 @@ get_header();
 			</div>
 
 			<!-- Post -->
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5">
-				<?php
-				// Start the Loop.
-				while ( have_posts() ) :?>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5" id='filtro'>
+				<?php while ( have_posts() ) :?>
 				<div>
 				<?php the_post(); get_template_part( 'template-parts/content/content', 'excerpt' );  // End the loop. ?>
 			</div>
 				
 				<?php endwhile;
 			
-			// Previous/next page navigation.
-			gravity_the_posts_navigation();
+				gravity_the_posts_navigation();
 
-		else :
+			else :
 
-			// If no content, include the "No posts found" template.
-			get_template_part( 'template-parts/content/content', 'none' );
+				get_template_part( 'template-parts/content/content', 'none' );
 
-		endif;
-		?>
+			endif;
+			?>
 		
 		</main><!-- #main -->
 	</section><!-- #primary -->

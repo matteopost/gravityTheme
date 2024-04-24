@@ -19,14 +19,25 @@
 
 <?php wp_footer(); ?>
 
-<script src="../../mixitup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-	var mixer = mixitup('#mix-it-up', {
-		animation: {
-			effects: 'fade',
-			easing: 'cubic-bezier(1, 0, 0, 1)',
-			duration: 400
+	var mixer = mixitup('#filtro', {
+		behavior: {
+			liveSort: true
 		},
+		controls: {
+			toggleLogic: "and"
+		},
+		animation: {
+			duration: 100,
+			nudge: true,
+			reverseOut: true,
+			effects: "fade"
+		},
+		classNames: {
+			block: "",
+			elementFilter: "filter"
+		}
 	});
 </script>
 
