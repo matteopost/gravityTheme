@@ -19,7 +19,16 @@
 
 <?php wp_footer(); ?>
 
+<script src="../../mixitup.js"></script>
+<script>
+	var mixer = mixitup('#mix-it-up', {
+		animation: {
+			effects: 'fade',
+			easing: 'cubic-bezier(1, 0, 0, 1)',
+			duration: 400
+		},
+	});
+</script>
 
 </body>
 </html>
-

@@ -31,7 +31,7 @@ get_header();
 				</div>
 
 
-				<div x-show="open" class="grid grid-cols-6 py-5 gap-5 block-filter">
+				<div x-show="open" class="grid grid-cols-6 py-5 gap-5 block-filter" id='mix-it-up'>
 					<div class="space-y-2">
 						<p class="text-base uppercase">Tema</p>
 						<button type="button" class="block" data-filter=".Suolo">Suolo</button>
