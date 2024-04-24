@@ -19,8 +19,8 @@
 
 <?php wp_footer(); ?>
 
-	<script src="/path/to/mixitup.min.js"></script>
-	<script>
+	<script src="../../mixitup.min.js"></script>
+	<!-- <script>
 		var mixer = mixitup(containerEl, {
 			selectors: {
 				target: '.group'
@@ -29,7 +29,7 @@
 				duration: 300
 			}
 		});
-	</script>
+	</script> -->
 </body>
 </html>
 
