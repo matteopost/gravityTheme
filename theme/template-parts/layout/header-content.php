@@ -9,7 +9,7 @@
 
 ?>
 
-<header id="masthead" c>
+<header id="masthead" >
 
 
 
