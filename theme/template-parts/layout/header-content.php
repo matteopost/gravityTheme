@@ -31,8 +31,6 @@
 		<h1 class="text-black font-medium text-6xl uppercase"><?php bloginfo( 'name' ); ?></h1>
 	</div>
 
-
-
 	<!-- <div>
 		<?php
 		if ( is_front_page() ) :
